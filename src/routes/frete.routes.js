@@ -3,5 +3,5 @@ const { Busca } = require('../controllers/frete.controller');
 const auth = require('../middleware/auth');
 
 router.get('/busca/',auth, Busca);
-
+router.post('/busca/',auth, Busca);
 module.exports = router;
