@@ -4,7 +4,6 @@ const config = {
 };
 
 const jwt = require('jsonwebtoken');
-const config = require('../config');
 const tokenList = {};
 
 exports.signinHandlerToken = async (req, res) => {
