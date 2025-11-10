@@ -1,0 +1,40 @@
+{
+  "name": "frete-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node index.js"
+  },
+  "author": "Alex Philippe de Carvalho Santos",
+  "license": "MIT",
+  "keywords": [
+    "node.js"
+  ],
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-promise-router": "^4.1.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "pkg": {
+    "targets": [
+      "node14-win-x64"
+    ],
+    "assets": [
+      "views/**/*",
+      "public/**/*"
+    ],
+    "scripts": [
+      "build/**/*.js"
+    ] 
+  }
+}
